@@ -1,4 +1,4 @@
 # Sorting Algorithms in JavaScript
-Sorting Algorithms implemented in JavaScript
 
+Simple Sorts
 1. [Insertion Sort](insertionsort.js)
