@@ -1,6 +1,6 @@
 # Algorithms in JavaScript
 
-Sorting Algorithms
+## Sorting Algorithms
 
 O(n²)
 
@@ -15,7 +15,7 @@ O(n²)
 5. [Merge Sort](Sorting/mergesort.js)
 
 
-Searching Algorithms
+## Searching Algorithms
 
 O(log n)
 
