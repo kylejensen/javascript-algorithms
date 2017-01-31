@@ -10,9 +10,11 @@ O(n²)
 
 3. [Insertion Sort](Sorting/insertionsort.js)
 
-4. [Quick Sort](Sorting/quicksort.js)
+O(n log n)
 
-5. [Merge Sort](Sorting/mergesort.js)
+1. [Quick Sort](Sorting/quicksort.js)
+
+2. [Merge Sort](Sorting/mergesort.js)
 
 
 ## Searching Algorithms
