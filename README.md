@@ -13,3 +13,10 @@ O(n²)
 4. [Quick Sort](Sorting/quicksort.js)
 
 5. [Merge Sort](Sorting/mergesort.js)
+
+
+Searching Algorithms
+
+O(log n)
+
+1. [Binary Search](Searching/binarysearch.js)
