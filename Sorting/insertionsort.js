@@ -1,6 +1,6 @@
 /*
 * Insertion Sort Algorithm in JavaScript
-* Average O(n²)
+* Worst-Case O(n²)
 */
 
 function insertionSort (arr) {

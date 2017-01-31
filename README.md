@@ -1,9 +1,10 @@
-# Sorting Algorithms in JavaScript
+# Algorithms in JavaScript
 
-Simple Sorts
+Sorting Algorithms
 
-1. [Insertion Sort](insertionsort.js)
-2. [Quick Sort](quicksort.js)
-3. [Merge Sort](mergesort.js)
-4. [Bubble Sort](bubblesort.js)
-5. [Selection Sort](selectionsort.js)
+O(n²)
+1. [Bubble Sort](Sorting/bubblesort.js)
+2. [Selection Sort](Sorting/selectionsort.js)
+3. [Insertion Sort](Sorting/insertionsort.js)
+4. [Quick Sort](Sorting/quicksort.js)
+5. [Merge Sort](Sorting/mergesort.js)

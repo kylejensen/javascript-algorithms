@@ -1,6 +1,6 @@
 /*
 * Merge Sort Algorithm in JavaScript
-* Average O(n log n)
+* Worst-Case O(n log n)
 */
 
 function merge(left, right) {
