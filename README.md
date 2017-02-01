@@ -16,6 +16,8 @@ O(n log n)
 
 2. [Merge Sort](Sorting/mergesort.js)
 
+3. [Heap Sort](Sorting/heapsort.js)
+
 
 ## Searching Algorithms
 
