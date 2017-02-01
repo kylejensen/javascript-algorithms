@@ -4,7 +4,7 @@
 */
 
 var arrayLength,
-    myArr = [40, 10, 50, 24, 1, 2, 4, -10, 15, 7, 8, 5];
+    myArr = [-5, 0, 14, 16, 288, 1, 5012, 4, -23];
 
 var buildHeap = function (arr) {
     arrayLength = arr.length;
@@ -49,4 +49,4 @@ var heapSort = function (arr) {
     return arr;
 };
 
-console.log(heapSort(myArr));
+heapSort(myArr); // [ -23, -5, 0, 1, 4, 14, 16, 288, 5012 ]
