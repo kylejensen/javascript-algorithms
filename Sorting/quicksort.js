@@ -1,45 +1,36 @@
 /*
 * Quick Sort Algorithm in JavaScript
-* Worst-Case O(n log n)
+* Worst-Case O(n²)
 */
 
-function swap(arr, i, j) {
-    var temp = arr[i];
+var swap = function (arr, i, j) {
+    var tmp = arr[i];
     arr[i] = arr[j];
-    arr[j] = temp;
-}
+    arr[j] = tmp;
+};
 
-function partition(arr, pivot, left, right) {
-    var pivotValue = arr[pivot],
-        partitionIndex = left,
-        i;
-
-    for (i = left; i < right; i++) {
-        if (arr[i] < pivotValue) {
-            swap(arr, i, partitionIndex);
-            partitionIndex++;
+var partition = function (arr, p, r) {
+    var q = p,
+        j;
+    for (j = p; j < r; j = j + 1) {
+        if (arr[j] < arr[r]) {
+            swap(arr, j, q);
+            q = q + 1;
         }
     }
-    swap(arr, i, partitionIndex);
-    return partitionIndex;
-}
+    swap(arr, j, q);
+    return q;
+};
 
-function quickSort(arr, left, right) {
-    var pivot,
-        partitionIndex;
-
-    if (left < right) {
-        pivot = right;
-        partitionIndex = partition(arr, pivot, left, right);
-        quickSort(arr, left, partitionIndex - 1);
-        quickSort(arr, partitionIndex + 1, right);
+var quickSort = function (arr, p, r) {
+    if (p < r) {
+        var q = partition(arr, p, r);
+        quickSort(arr, p, q - 1);
+        quickSort(arr, q + 1, r);
+        return arr;
     }
-    return arr;
-}
+};
 
-// Calling the function - Method 1
-var myArray = [9,2,60,125,7,3,1,4,7,2,8];
-quickSort(myArray, 0, myArray.length - 1); // [ 1, 2, 2, 3, 4, 7, 7, 8, 9, 60, 125 ]
+var myArr = [2,4,6,7,1,12,4,6,5,72,48,6,35,68,63842,57,68,65,3,6,3,23,5,7];
 
-// Calling the function - Method 2 (Third paramater is the length of the array minus 1)
-quickSort([9,2,60,125,7,3,1,4,7,2,8], 0, 10); // [ 1, 2, 2, 3, 4, 7, 7, 8, 9, 60, 125 ]
+quickSort(myArr, 0, myArr.length - 1); //[ 1,2,3,3,4,4,5,5,6,6,6,6,7,7,12,23,35,48,57,65,68,68,72,63842]
