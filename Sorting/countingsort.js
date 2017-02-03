@@ -26,9 +26,9 @@ var countingSort = function countingSort (arr, min, max) {
     return arr;
 }
 
-var myArray = [1,12,3,7,3,1,4,6,8,2];
+var myArray = [0, -5, 14, 23, -24, 4, 190, 0, 0, 0];
 
 // 2nd parameter is the min value of the array,
 // 3rd is the max value of the array
 
-console.log(countingSort(myArray, 1, 12)); // [ 1, 1, 2, 3, 3, 4, 6, 7, 8, 12 ]
+countingSort(myArray, -24, 190); // [ -24, -5, 0, 0, 0, 0, 4, 14, 23, 190 ]
