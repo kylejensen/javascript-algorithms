@@ -2,7 +2,7 @@
 
 ## Sorting Algorithms
 
-Θ(n²)
+#### Comparison Sorts
 
 1. [Bubble Sort](Sorting/bubblesort.js)
 
@@ -10,21 +10,17 @@
 
 3. [Insertion Sort](Sorting/insertionsort.js)
 
-Θ(n log n)
+4. [Quick Sort](Sorting/quicksort.js)
 
-1. [Quick Sort](Sorting/quicksort.js)
+5. [Merge Sort](Sorting/mergesort.js)
 
-2. [Merge Sort](Sorting/mergesort.js)
+6. [Heap Sort](Sorting/heapsort.js)
 
-3. [Heap Sort](Sorting/heapsort.js)
-
-Θ(n + k)
+#### Non-Comparison Sorts
 
 1. [Counting Sort](Sorting/countingsort.js)
 
 
 ## Searching Algorithms
-
-Θ(log n)
 
 1. [Binary Search](Searching/binarysearch.js)
