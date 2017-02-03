@@ -2,7 +2,7 @@
 
 ## Sorting Algorithms
 
-O(n²)
+Θ(n²)
 
 1. [Bubble Sort](Sorting/bubblesort.js)
 
@@ -10,7 +10,7 @@ O(n²)
 
 3. [Insertion Sort](Sorting/insertionsort.js)
 
-O(n log n)
+Θ(n log n)
 
 1. [Quick Sort](Sorting/quicksort.js)
 
@@ -18,9 +18,13 @@ O(n log n)
 
 3. [Heap Sort](Sorting/heapsort.js)
 
+Θ(n + k)
+
+1. [Counting Sort](Sorting/countingsort.js)
+
 
 ## Searching Algorithms
 
-O(log n)
+Θ(log n)
 
 1. [Binary Search](Searching/binarysearch.js)
