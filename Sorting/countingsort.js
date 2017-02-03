@@ -4,22 +4,26 @@
 */
 
 var countingSort = function countingSort (arr, min, max) {
-    var storageArr = [],
-        outputArr = [];
-    for (var i = 0; i <= max; i++) {
-        storageArr[i] = 0;
+    var i,
+        j = 0,
+        len = arr.length,
+        count = [];
+
+    for (i = min; i <= max; i++) {
+        count[i] = 0;
     }
-    for (var j = 1; j <= arr.length; j++) {
-        storageArr[arr[j]] = storageArr[arr[j]] + 1;
+
+    for (i = 0; i < len; i++) {
+        count[arr[i]]++
     }
-    for (i = 1; i <= max; i++) {
-        storageArr[i] = storageArr[i] + storageArr[i - 1];
+
+    for (i = min; i <= max; i++) {
+        while (count[i]-- > 0) {
+            arr[j++] = i;
+        }
     }
-    for (j = arr.length - 1; j >= 0; j--) {
-        outputArr[storageArr[arr[j]]] = arr[j];
-        storageArr[arr[j]] = storageArr[arr[j]] - 1;
-    }
-    return outputArr;
+
+    return arr;
 }
 
 var myArray = [1,12,3,7,3,1,4,6,8,2];
@@ -27,4 +31,4 @@ var myArray = [1,12,3,7,3,1,4,6,8,2];
 // 2nd parameter is the min value of the array,
 // 3rd is the max value of the array
 
-countingSort(myArray, 1, 12); // [ 1, 1, 2, 3, 3, 4, 6, 7, 8, 12 ]
+console.log(countingSort(myArray, 1, 12)); // [ 1, 1, 2, 3, 3, 4, 6, 7, 8, 12 ]
