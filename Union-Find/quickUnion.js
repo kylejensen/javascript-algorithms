@@ -1,5 +1,5 @@
 /*
-    Quick Union
+    Quick Union 
     O(MN)
 */
 
