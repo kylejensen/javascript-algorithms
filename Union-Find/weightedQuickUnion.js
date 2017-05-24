@@ -1,5 +1,5 @@
 /*
-    Weighted Quick Union + Path Compression implementation in JavaScript
+    Weighted Quick Union + Path Compression
     O(N + M lg* N)
 */
 

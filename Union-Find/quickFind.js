@@ -1,5 +1,5 @@
 /*
-    Quick Find implementation in JavaScript
+    Quick Find
     O(MN)
 */
 

@@ -1,5 +1,5 @@
 /*
-    Quick Union implementation in JavaScript
+    Quick Union
     O(MN)
 */
 
