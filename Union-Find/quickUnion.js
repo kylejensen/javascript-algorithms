@@ -1,5 +1,6 @@
 /*
-    Weighted Quick Union + Path Compression implementation in JavaScript
+    Quick Union implementation in JavaScript
+    O(MN)
 */
 
 function QuickUnion (size) {

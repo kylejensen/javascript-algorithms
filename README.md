@@ -24,3 +24,10 @@
 ## Searching Algorithms
 
 1. [Binary Search](Searching/binarysearch.js)
+
+
+## Union Find
+
+1. [Quick Find](Union-Find/quickFind.js)
+2. [Quick Union](Union-Find/quickUnion.js)
+3. [Weighted Quick Union + Path Compression](Union-Find/weightedQuickUnion.js)

@@ -1,5 +1,6 @@
 /*
     Weighted Quick Union + Path Compression implementation in JavaScript
+    O(N + M lg* N)
 */
 
 function WeightedQuickUnion (size) {
