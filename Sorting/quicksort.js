@@ -1,6 +1,6 @@
 /*
 * Quick Sort Algorithm in JavaScript
-* Worst-Case O(n²)
+* Worst-Case O(n log n)
 */
 
 var swap = function (arr, i, j) {
