@@ -3,7 +3,7 @@
 * Worst-Case O(n²)
 */
 
-let bubbleSort = function (arr) {
+let bubbleSort = function(arr) {
     let len = arr.length;
     for (let i = 0; i < len; i++) {
         for (let j = 0; j < len - i; j++) {
@@ -14,6 +14,23 @@ let bubbleSort = function (arr) {
             }
         }
     }
+    return arr;
+};
+
+let bubbleSort2 = function(arr) {
+    let len = arr.length,
+        swapped;
+    do {
+        swapped = false;
+        for (let i = 0; i < len; i++) {
+            if (arr[i] > arr[i + 1]) {
+                var tmp = arr[i];
+                arr[i] = arr[i + 1];
+                arr[i + 1] = tmp;
+                swapped = true;
+            }
+        }
+    } while (swapped);
     return arr;
 };
 
