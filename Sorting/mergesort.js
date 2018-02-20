@@ -27,9 +27,9 @@ let mergeSort = (arr) => {
         return arr;
     }
 
-    let middle = Math.floor(len / 2),
-        left = arr.slice(0, middle),
-        right = arr.slice(middle);
+    let mid = Math.floor(len / 2),
+        left = arr.slice(0, mid),
+        right = arr.slice(mid);
 
     return merge(mergeSort(left), mergeSort(right));
 };
