@@ -38,5 +38,5 @@ let binarySearchRecursive = (arr, key, min, max) => {
 
 let myArr = [1,2,3,4,5,6,7,8,9,10,13,15,17,19,20,40,56,70];
 
-console.log(binarySearch(myArr, 4)); // 4 found at position 3
-console.log(binarySearchRecursive(myArr, 17, 0, myArr.length - 1)); // 17 found at position 12
+binarySearch(myArr, 4); // 4 found at position 3
+binarySearchRecursive(myArr, 17, 0, myArr.length - 1); // 17 found at position 12
