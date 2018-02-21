@@ -7,8 +7,7 @@ let myArr = [-5, 0, 14, 16, 288, 1, 5012, 29, 4, -23],
     arrayLength;
 
 let buildHeap = (arr) => {
-    arrayLength = arr.length;
-    for (let i = Math.floor((arrayLength / 2)); i >= 0; i--) {
+    for (let i = Math.floor((arr.length / 2)); i >= 0; i--) {
         heapify(arr, i);
     }
 };
