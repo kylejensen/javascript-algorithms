@@ -6,7 +6,7 @@ let binarySearch = (arr, key) => {
         guess;
 
     while (min <= max) {
-        guess = Math.floor((min + max) / 2);
+        guess = Math.floor((min + (max - min) / 2));
 
         if (arr[guess] === key) {
             return key + " found at position " + guess;
@@ -25,7 +25,7 @@ let binarySearchRecursive = (arr, key, min, max) => {
     if (max < min) {
         return -1;
     } else {
-        let guess = Math.floor((min + max) / 2);
+        let guess = Math.floor((min + (max - min) / 2));
         if (arr[guess] === key) {
             return key + " found at position " + guess;
         } else if (arr[guess] < key) {
