@@ -3,18 +3,18 @@
 * Worst-Case O(n log n)
 */
 
-var arrayLength,
-    myArr = [-5, 0, 14, 16, 288, 1, 5012, 4, -23];
+let myArr = [-5, 0, 14, 16, 288, 1, 5012, 29, 4, -23],
+    arrayLength;
 
-var buildHeap = function (arr) {
+let buildHeap = (arr) => {
     arrayLength = arr.length;
-    for (var i = Math.floor(arrayLength / 2); i >= 0; i--) {
+    for (let i = Math.floor((arrayLength / 2)); i >= 0; i--) {
         heapify(arr, i);
     }
 };
 
-var heapify = function (arr, i) {
-    var left = 2 * i + 1,
+let heapify = (arr, i) => {
+    let left = 2 * i + 1,
         right = 2 * i + 2,
         largest = i;
 
@@ -32,16 +32,16 @@ var heapify = function (arr, i) {
     }
 };
 
-var swap = function (arr, i, j) {
-    var tmp = arr[i];
+let swap = (arr, i, j) => {
+    let tmp = arr[i];
     arr[i] = arr[j];
     arr[j] = tmp;
 };
 
-var heapSort = function (arr) {
+let heapSort = (arr) => {
     buildHeap(arr);
-    var len = arr.length;
-    for (var i = len - 1; i > 0; i--) {
+    let len = arr.length;
+    for (let i = len - 1; i > 0; i--) {
         swap(arr, 0, i);
         arrayLength--;
         heapify(arr, 0);
@@ -49,4 +49,4 @@ var heapSort = function (arr) {
     return arr;
 };
 
-heapSort(myArr); // [ -23, -5, 0, 1, 4, 14, 16, 288, 5012 ]
+heapSort(myArr); // [ -23, -5, 0, 1, 4, 14, 16, 29, 288, 5012 ]
