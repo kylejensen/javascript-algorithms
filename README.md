@@ -1,4 +1,4 @@
-# Algorithms in JavaScript
+# Algorithms in Javascript
 
 ## Sorting Algorithms
 
