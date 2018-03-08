@@ -25,6 +25,10 @@
 
 1. [Binary Search](Searching/binarysearch.js)
 
+#### Graph Traversal
+
+2. [Breadth First Search](Searching/Graphs/breadthfirstsearch.js)
+
 
 ## Union Find
 
