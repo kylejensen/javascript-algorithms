@@ -27,7 +27,7 @@
 
 #### Graph Traversal
 
-2. [Breadth First Search](Searching/Graphs/breadthfirstsearch.js)
+1. [Breadth First Search](Searching/Graphs/breadthfirstsearch.js)
 
 
 ## Union Find
