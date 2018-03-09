@@ -2,7 +2,7 @@
 // return all elements of the matrix in spiral order
 
 let spiralOrder = (A) => {
-    var rows = A.length,
+    let rows = A.length,
         cols = A[0].length,
         t = 0, // top
         b = (rows - 1), // bottom,
@@ -13,7 +13,7 @@ let spiralOrder = (A) => {
 
         while (t <= b && l <= r) {
             if (direction === 0) {
-                for (var i = l; i <= r; i++) {
+                for (let i = l; i <= r; i++) {
                     res.push(A[t][i]);
                 }
                 t++;
