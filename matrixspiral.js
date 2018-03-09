@@ -42,7 +42,16 @@ let spiralOrder = (A) => {
 };
 
 // Tests
-let arr1 = [[1,2],[3,4],[5,6]];
-let arr2 = [[2,4,6,8],[5,9,12,16],[2,11,5,9],[3,2,1,8]];
-console.log(spiralOrder(arr1));
-console.log(spiralOrder(arr2));
+let arr1 = [
+    [1,2],
+    [3,4],
+    [5,6]
+];
+let arr2 = [
+    [2,4,6,8],
+    [5,9,12,16],
+    [2,11,5,9],
+    [3,2,1,8]
+];
+console.log(spiralOrder(arr1)); // [ 1, 2, 4, 6, 5, 3 ]
+console.log(spiralOrder(arr2)); // [ 2, 4, 6, 8, 16, 9, 8, 1, 2, 3, 2, 5, 9, 12, 5, 11 ]
