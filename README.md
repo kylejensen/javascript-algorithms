@@ -35,3 +35,6 @@
 1. [Quick Find](Union-Find/quickFind.js)
 2. [Quick Union](Union-Find/quickUnion.js)
 3. [Weighted Quick Union + Path Compression](Union-Find/weightedQuickUnion.js)
+
+## Other
+1. [Spiral Order Matrix](matrixspiral.js)
